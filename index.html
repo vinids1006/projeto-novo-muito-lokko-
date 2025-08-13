@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz do Coxa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Você decide o futuro da IA</title>
 </head>
-<body>
-    <div class="caixa-principal">
-        <h1>Você decide o futuro da IA</h1>
-        <div class="caixa-perguntas"></div>
-        <div class="caixa-alternativas"></div>
-        <div class="caixa-resultado">
-            <p class="texto-resultado"></p>
-        </div>
+<body class="flex items-center justify-center min-h-screen">
+    <div id="quiz-container" class="w-full max-w-md p-8 text-center">
+        <h1 id="quiz-title" class="text-3xl font-bold mb-6">Quiz do Coxa</h1>
+        <button id="start-button" class="bg-white text-green-700 font-bold py-2 px-4 rounded hover:bg-gray-200">
+            Começar Quiz
+        </button>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
