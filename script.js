@@ -111,3 +111,4 @@ function mostraResultado() {
 }
 
 mostraPergunta();
+
