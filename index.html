@@ -1,20 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz do Coxa</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz do Coritiba</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-<body class="flex items-center justify-center min-h-screen">
-    <div id="quiz-container" class="w-full max-w-md p-8 text-center">
-        <h1 id="quiz-title" class="text-3xl font-bold mb-6">Quiz do Coxa</h1>
-        <button id="start-button" class="bg-white text-green-700 font-bold py-2 px-4 rounded hover:bg-gray-200">
-            Começar Quiz
-        </button>
-    </div>
+<body>
+  <main class="container">
+    <!-- Tela de Início -->
+    <section id="start-screen" class="card">
+      <h1>Quiz do Coritiba</h1>
+      <p class="subtitle">Teste seus conhecimentos sobre o Coxa!</p>
+      <button id="start-btn" class="btn primary">Começar</button>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Tela do Quiz -->
+    <section id="quiz-screen" class="card hidden">
+      <div class="quiz-header">
+        <span id="progress">Pergunta 1/10</span>
+      </div>
+
+      <h2 id="question" class="question">Pergunta aqui</h2>
+
+      <div id="options" class="options">
+        <!-- Botões de alternativas gerados via JS -->
+      </div>
+
+      <div class="actions">
+        <button id="next-btn" class="btn" disabled>Próxima</button>
+      </div>
+    </section>
+
+    <!-- Tela de Resultado -->
+    <section id="result-screen" class="card hidden">
+      <h2>Resultado</h2>
+      <p id="score-text" class="result-text"></p>
+      <p id="percent-text" class="result-sub"></p>
+      <button id="restart-btn" class="btn primary">Jogar novamente</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
